@@ -1,0 +1,82 @@
+/* Style général */
+body {
+    background-color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Conteneur principal */
+.cv-container {
+    max-width: 900px;
+    margin: 30px auto;
+    display: flex;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+    background: #2c3e50;
+    color: white;
+    width: 35%;
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid white;
+}
+
+.section-title {
+    font-weight: bold;
+    margin-top: 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid white;
+    text-align: left;
+}
+
+/* Listes */
+.list-group {
+    padding: 0;
+}
+
+.list-group-item {
+    background: transparent;
+    border: none;
+    color: white !important;
+    font-size: 16px;
+    text-align: left;
+}
+
+.list-group-item i {
+    margin-right: 8px;
+    color: #f39c12;
+}
+
+/* Contenu principal */
+.content {
+    background: white;
+    padding: 20px;
+    width: 65%;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Animation d’apparition */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.cv-container {
+    animation: fadeIn 1s ease-in;
+}
